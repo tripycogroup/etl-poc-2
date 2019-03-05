@@ -1,0 +1,7 @@
+{
+  "*.{js,jsx}": [
+    "prettier-eslint --write",
+    "eslint --color",
+    "git add"
+  ]
+}
