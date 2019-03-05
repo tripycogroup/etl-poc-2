@@ -1,1 +1,3 @@
-console.log('hello world');
+import virtual_machine from './virtual_machine';
+
+virtual_machine();
