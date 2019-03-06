@@ -80,10 +80,11 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
-build/
-dist/
+node_modules
+jspm_packages
+build
+dist
+out
 
 # TypeScript v1 declaration files
 typings/
@@ -163,5 +164,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Azure Functions artifacts
+bin
+obj
+appsettings.json
+local.settings.json
 
 # End of https://www.gitignore.io/api/node,macos,linux,windows,visualstudiocode
