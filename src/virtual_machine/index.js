@@ -1,6 +1,7 @@
 import {
   map,
   now,
+  padCharsStart,
   template,
   random
 } from 'lodash/fp';
@@ -31,7 +32,7 @@ export default () => setInterval(() => {
       const EIGHT_HOURS = 28800000;
       
       const cluster_number = random(0, 5);
-      const miner_number = random(0, 5);
+      const miner_number = padCharsStart('0', 2, random(0, 5));
       const timestamp = now() + random(-EIGHT_HOURS, EIGHT_HOURS); // +- 8hrs from now
       const value = random(0, 1);
 
